@@ -14,17 +14,27 @@ The latest API version is detailed at https://thumbalizr.com/api/documentation.
 
 ## Use Thumbalizr
 
+		### Install manually
     git clone https://github.com/juliensobrier/thumbalizr-php
     include "src/thumbalizr.php"
    
     ### Install with Composer
     composer.json can be found at https://raw.githubusercontent.com/juliensobrier/thumbalizr-php/master/composer.json
-    
     run composer update: `php composer.phar update` or `php composer.phar install`
     
     include composer packages and libraries:
         
     require "vendor/autoload.php";
+    
+    
+    ### code sample
+    $thumbalizr = new Thumbalizr('MY_KEY', 'MY_SECRET');
+
+		$url = $thumbalizr->url('https://www.google.com/');
+		echo("$url\n");
+
+		$res = $thumbalizr->download_wait($url, "google.png");
+		echo($res[0]);
 
 
 ## Contributing to Browshot
@@ -39,4 +49,4 @@ The latest API version is detailed at https://thumbalizr.com/api/documentation.
 
 ## Copyright
 
-Copyright (c) 2012-2016 Julien Sobrier
+Copyright (c) 2019 Julien Sobrier
