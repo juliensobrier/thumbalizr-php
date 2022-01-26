@@ -1,5 +1,7 @@
 # Thumbalizr (PHP)
 
+[![Git](https://app.soluble.cloud/api/v1/public/badges/4790d3cd-3809-4ff1-ab37-816563524deb.svg?orgId=234270307752)](https://app.soluble.cloud/repos/details/github.com/juliensobrier/thumbalizr-php?orgId=234270307752)  
+
 Thumbalizr (https://www.thumbalizr.com/) is a web service to easily embed live screenshots of any URL in your website. Thumbalizr has full support for Flash, JavaScript, CSS, & HTML5.
 
 The latest API version is detailed at https://thumbalizr.com/api/documentation.
